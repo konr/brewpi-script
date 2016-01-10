@@ -649,7 +649,7 @@ while run:
                 restoreSettings = programParameters['restoreSettings']
                 restoreDevices = programParameters['restoreDevices']
                 programmer.programController(config, boardType, hexFile,
-                                             nil, nil
+                                             nil, nil,
                                           {'settings': restoreSettings, 'devices': restoreDevices})
                 logMessage("New program uploaded to controller, script will restart")
             except json.JSONDecodeError:
